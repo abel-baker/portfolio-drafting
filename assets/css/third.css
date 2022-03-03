@@ -162,17 +162,21 @@ footer {
 }
 
 #resume {
-    background-position: 0 0;
-    background-size: cover;
-    background-image: url('../images/icon-sq.webp');
-}
-
-.contact-tile {
     background-position: center;
     background-size: cover;
-    background-image: url('../images/icon-sq.webp');
+    background-image: url('../images/icon-resume.webp');
 }
 
+.github {
+    background-position: 50% 0;
+    background-size: cover;
+    background-image: url('../images/icon-gh.png');
+}
+.twitter {
+    background-position: 50% 0;
+    background-size: cover;
+    background-image: url('../images/icon-tw.png');
+}
 
 /* MEDIA QUERIES */
 
