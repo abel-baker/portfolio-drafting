@@ -3,23 +3,18 @@
 
 <head>
     <meta charset="UTF-8>" />
+    <link rel="stylesheet" href="./assets/css/other.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Trirong&display=swap" rel="stylesheet"> 
-
-    <link rel="stylesheet" href="./assets/css/third.css" />
-
-    <title>Abel Baker &ndash; front-end portfolio</title>
+    <title>Abel Baker &ndash; portfolio</title>
 </head>
 
 <body>
 
     <header class="header">
-        <h1><span class="no-break">Abel Baker</span>, <span class="no-break">a Silly Billy</span></h1>
+        <h1><em>Abel Baker</em></h1>
     </header>
 
-    <section class="hero"> <!-- hero text --> </section>
+    <!-- <section class="hero"> hero image </section> -->
 
     <main class="main">
 
@@ -28,19 +23,23 @@
             <section id="section-projects" class="section-projects"> <!-- flexbox: title bar and content div -->
                 <div class="title-bar"> <!-- flexbox: title bar with section name and nav buttons -->
                     <h3>Projects</h3>
+                    <div class="nav"> <!-- flexbox: top and bottom arrows -->
+                        <a href="/" title="up to top"><img src="https://via.placeholder.com/80x25" alt="up to top" /></a>
+                        <a href="/" title="down to resume"><img src="https://via.placeholder.com/80x25" alt="down to resume" /></a>
+                    </div>
                 </div>
 
                 <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles -->
 
                     <article id="project-html"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
-                        <p>html / css</p>
+                        <p>html</p>
                     </article>
 
                     <article id="project-js">
                         <p>javascript</p>
                     </article>
 
-                    <article id="project-combo" class="flip-article"> <!-- horizontal bar w stretch -->
+                    <article id="project-combo"> <!-- horizontal bar w stretch -->
                         <p>c-c-c-combo, d.b.a. a long bit of text</p>
                     </article>
 
@@ -51,11 +50,15 @@
             <section id="section-resume" class="section-resume"> <!-- flexbox? single article -->
                 <div class="title-bar">
                     <h3>Resume</h3>
+                    <div class="nav">
+                        <a href="/" title="up to projects"><img src="https://via.placeholder.com/80x30" alt="up to projects" /></a>
+                        <a href="/" title="down to contact"><img src="https://via.placeholder.com/80x30" alt="down to contact" /></a>
+                    </div>
                 </div>
 
                 <section class="article-container resume-container">
 
-                    <article id="resume" class="flip-article"> <!-- horizontal box -->
+                    <article id="resume"> <!-- horizontal box -->
                         
                         <p>resume</p>
                     </article>
@@ -66,9 +69,14 @@
             <section id="section-contact" class="section-contact"> <!-- flexbox: horizontal icons -->
                 <div class="title-bar">
                     <h3>Contact</h3>
+                    <div class="nav">
+                        <a href="/" title="up to resume"><img src="https://via.placeholder.com/80x30" alt="up to resume" /></a>
+                        <!-- <a href="/" title="down to contact"><img src="/" alt="down to contact" /></a> -->
+                    </div>
                 </div>
 
-                <section class="article-container contact-container">
+                <section class="contact-container">
+
                     <article class="contact-tile twitter"> <!-- flexbox: square(ish) vertical boxes -->
                         <p>twitter</p>
                     </article>
@@ -83,6 +91,7 @@
         </section> <!-- end content -->
 
     </main>
+
 
 
 </body>

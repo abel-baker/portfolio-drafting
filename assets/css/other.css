@@ -41,22 +41,27 @@ header h1 {
 }
 
 .title-bar {
+    height: 200px;
+    align-items: flex-end;
     display: flex;
     justify-content: space-between;
-    margin-top: 65px;
-    margin-bottom: 20px;
-    margin-left: 15px;
+
+    border: 1px solid pink;
 }
 .title-bar .nav {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
 
+    flex: 1 0;
+
     border: 1px solid slateblue;
 }
 
 h3 {
+    flex: 14 14 100%;
     font-size: 56px;
+    border: 1px solid orange;
 }
 
 article {
