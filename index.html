@@ -19,68 +19,70 @@
         <h1><span class="no-break">Abel Baker</span>, <span class="no-break">a Silly Billy</span></h1>
     </header>
 
-    <section class="hero"> <!-- hero text --> </section>
+    <section class="hero"><p>front-end developer, back-end apprentice</p></section>
 
     <main class="main">
 
-        <section class="content"> <!-- flexbox: contain all sections -->
+        <section id="section-projects"> <!-- flexbox: title bar and content div -->
+            <div class="title-bar"> <!-- flexbox: title bar with section name -->
+                <h3>Projects</h3>
+            </div>
 
-            <section id="section-projects" class="section-projects"> <!-- flexbox: title bar and content div -->
-                <div class="title-bar"> <!-- flexbox: title bar with section name and nav buttons -->
-                    <h3>Projects</h3>
-                </div>
+            <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles -->
 
-                <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles -->
+                <article id="project-html"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
+                    <p>
+                        <a href="/">html / css</a>
+                    </p>
+                </article>
 
-                    <article id="project-html"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
-                        <p>html / css</p>
-                    </article>
+                <article id="project-js">
+                    <p>
+                        <a href="/">javascript</a>
+                    </p>
+                </article>
 
-                    <article id="project-js">
-                        <p>javascript</p>
-                    </article>
+                <article id="project-combo" class="flip-article"> <!-- horizontal bar w stretch -->
+                    <p>
+                        <a href="/">irl</a>
+                    </p>
+                </article>
 
-                    <article id="project-combo" class="flip-article"> <!-- horizontal bar w stretch -->
-                        <p>c-c-c-combo, d.b.a. a long bit of text</p>
-                    </article>
+            </section> <!-- end project-container-->
 
-                </section> <!-- end project-container-->
+        </section> <!-- end projects -->
 
-            </section> <!-- end projects -->
+        <section id="section-resume"> <!-- flexbox? single article -->
+            <div class="title-bar">
+                <h3>Resume</h3>
+            </div>
 
-            <section id="section-resume" class="section-resume"> <!-- flexbox? single article -->
-                <div class="title-bar">
-                    <h3>Resume</h3>
-                </div>
+            <section class="article-container resume-container">
 
-                <section class="article-container resume-container">
+                <article id="resume" class="flip-article"> <!-- horizontal box -->
+                    
+                    <p>resume</p>
+                </article>
 
-                    <article id="resume" class="flip-article"> <!-- horizontal box -->
-                        
-                        <p>resume</p>
-                    </article>
+            </section>
+        </section>  <!-- end resume -->
 
-                </section>
-            </section>  <!-- end resume -->
+        <section id="section-contact"> <!-- flexbox: horizontal icons -->
+            <div class="title-bar">
+                <h3>Contact</h3>
+            </div>
 
-            <section id="section-contact" class="section-contact"> <!-- flexbox: horizontal icons -->
-                <div class="title-bar">
-                    <h3>Contact</h3>
-                </div>
+            <section class="article-container contact-container">
+                <article class="contact-tile twitter"> <!-- flexbox: square(ish) vertical boxes -->
+                    <p>twitter</p>
+                </article>
 
-                <section class="article-container contact-container">
-                    <article class="contact-tile twitter"> <!-- flexbox: square(ish) vertical boxes -->
-                        <p>twitter</p>
-                    </article>
+                <article class="contact-tile github">
+                    <p>github</p>
+                </article>
 
-                    <article class="contact-tile github">
-                        <p>github</p>
-                    </article>
-
-                </section>
-            </section>  <!-- end resume -->
-
-        </section> <!-- end content -->
+            </section>
+        </section>  <!-- end resume -->
 
     </main>
 
