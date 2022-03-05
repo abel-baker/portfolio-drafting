@@ -29,23 +29,27 @@
                 <h3>Projects</h3>
             </div>
 
-            <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles -->
+            <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles --> 
 
-                <article id="project-html"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
-                    <p>
-                        <a href="#">html / css</a>
-                    </p>
+                <article id="project-html" class="flip-article"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
+                    <a href="https://abel-baker.github.io/run-buddy/" target="_blank"><img src="./assets/images/runbuddy.png" 
+                        alt="Screenshot and source code of Run Buddy website implemented in html & css by abel baker" /></a>
+                    <p>html / css</p>
                 </article>
-
+                
                 <article id="project-js">
+                    <a href="#" target="_blank"><img src="./assets/images/loveletters.png"
+                        alt="Screenshot and source code of Love Letters bot for Discord developed by abel baker" /></a>
                     <p>
-                        <a href="#">javascript</a>
+                        javascript
                     </p>
                 </article>
 
-                <article id="project-combo" class="flip-article"> <!-- horizontal bar on narrow res "flip-article" -->
+                <article id="project-combo">
+                    <a href="https://imgur.com/a/7Ihcbfj" target="_blank"><img src="./assets/images/crochet.webp"
+                        alt="Crochet project in progress on a Tunisian crochet hook and balls of yarn" /></a>
                     <p>
-                        <a href="#">irl</a>
+                        irl
                     </p>
                 </article>
 
@@ -58,8 +62,9 @@
             </div>
 
             <section class="article-container resume-container">
-
                 <article id="resume" class="flip-article"> <!-- horizontal box -->
+                    <a href="#" target="_blank"><img src="./assets/images/resume.png"
+                        alt="Screenshot of a resume with 'hipster ipsum' placeholder text" /></a>
                     <p>resume</p>
                 </article>
 
@@ -72,12 +77,18 @@
             </div>
 
             <section class="article-container contact-container">
-                <article class="contact-tile twitter"> <!-- flexbox: square(ish) vertical boxes -->
-                    <p>twitter</p>
+                <article id="twitter" class="contact-tile"> <!-- flexbox: square(ish) vertical boxes -->
+                    <a href="https://twitter.com/abel-baker">
+                        <img src="./assets/images/icon-tw.png" alt="twitter logo" />
+                    </a>
+                    <p>@abel-baker</p>
                 </article>
 
-                <article class="contact-tile github">
-                    <p>github</p>
+                <article id="github" class="contact-tile">
+                    <a href="https://github.com/abel-baker">
+                        <img src="./assets/images/icon-gh.png" alt="twitter logo" />
+                    </a>
+                    <p>abel-baker</p>
                 </article>
 
             </section>
