@@ -1,22 +1,24 @@
 :root {
+    /* light blues */
     /* --theme-dark: #0A1829;
     --theme-mid-a: #588E95;
     --theme-mid-b: #7FADA9;
     --theme-light-a: #CCD9CE;
     --theme-light-b: #F6EDD3;  */
 
+    /* light browns */
     /* --theme-dark: #130D0A;
     --theme-mid-a: #994202;
     --theme-mid-b: #CD9340;
     --theme-light-a: #FFD392;
     --theme-light-b: #FEECCB;  */
 
+    /* blue & cornsilk */
     --theme-dark: #222222;
     --theme-mid-a: #646666;
     --theme-mid-b: #004255;
     --theme-light-a: #00556F;
     --theme-light-b: #FFFCE0;
-
 }
 
 * {
@@ -29,11 +31,13 @@
 body {
     background-color: var(--theme-dark);
 }
-
 a, a:hover, a:visited {
     color: inherit;
     text-decoration: none;
 }
+
+
+/* HEADER */
 
 header {
     z-index: 1;
@@ -50,7 +54,7 @@ header h1 {
     margin-top: 100px;
 
     color: var(--theme-light-b);
-    font-family: Trirong, Georgia, 'Times New Roman', Times, serif;
+    font-family: Trirong, serif;
     font-size: 45pt;
     font-size-adjust: 0.5;
     vertical-align: baseline;
@@ -58,15 +62,24 @@ header h1 {
     text-transform: lowercase;
     font-style: normal;
     font-weight: bold;
+    text-shadow: 0 1px 2px var(--theme-mid-a);
 }
-nav, footer nav {
+/* Utility - to preserve "abel baker" and "a silly billy" at low resolutions*/
+.no-break {
+    white-space: nowrap;
+}
+
+
+/* HEADER AND FOOTER NAV */
+
+nav {
+    z-index: -1;
     position: absolute;
     right: 0;
 
     background-color: var(--theme-light-b);
 }
-
-nav ul, footer nav ul {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -74,7 +87,7 @@ nav ul, footer nav ul {
 
     list-style: none;
 }
-nav ul li.nav-label, footer nav ul li.nav-label {
+nav ul li.nav-label {
     padding: 10px;
 }
 nav ul li {
@@ -83,25 +96,25 @@ nav ul li {
     font-weight: bold;
 }
 nav ul li a {
-    padding: 10px;
     display: block;
+
+    padding: 10px;
 }
 nav ul li a:hover {
     background-color: var(--theme-dark);
+
     color: var(--theme-light-b);
 }
 
-/* Utility */
-.no-break {
-    white-space: nowrap;
-}
+
+/* HERO */
 
 .hero {
-    height: 200px;
-
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+
+    height: 200px;
 
     background-image: url("../images/hero-bg.webp");
     background-size: cover;
@@ -109,6 +122,7 @@ nav ul li a:hover {
 }
 .hero p {
     padding: 30px 14px;
+
     color: var(--theme-light-b);
     font-family: Rubik, sans-serif;
 }
@@ -116,19 +130,19 @@ nav ul li a:hover {
     max-height: 200px;
 }
 
-
-/* main/content */
-
-#section-projects {
+/* correct anchor location for sticky header */
+#hero, #section-projects {
     scroll-margin-top: 80px;
 }
+
+
+/* MAIN/CONTENT */
 
 .title-bar {    
     margin-bottom: 20px;
 
     background-color: var(--theme-light-a);
 }
-
 h3 {
     margin-left: 14px;
 
@@ -139,33 +153,29 @@ h3 {
 
 /* For setting the text in lower-right */
 article {
-    height: 450px;
     position: relative;
-
-    /* display: flex;
-    align-items: stretch;
-    justify-content: stretch; */
-
     flex: 0 300px;
+
+    height: 450px;
+
     border: 6px solid var(--theme-mid-b);
     
     overflow: hidden;
 }
-
 
 article p {
     position: absolute;
     bottom: 0;
     right: 0;
 
-    padding: 6px 30px 0 6px;
     min-width: 90px;
+    padding: 6px 30px 0 6px;
     
     background-color: var(--theme-mid-b);
 
     color: var(--theme-light-b);
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
+    font-family: Rubik, sans-serif;
 }
 
 .article-container {
@@ -174,22 +184,18 @@ article p {
     justify-content: center;
 
     padding: 22px;
-
-    gap: 20px;
-
     margin-bottom: 65px;
+    gap: 20px;
 }
 
 .resume-container article {
-    height: 200px;
     flex: 0 940px;
+    height: 200px;
 }
 
 .contact-container article {
     height: 200px;
 }
-
-
 
 
 /* images */
@@ -202,13 +208,9 @@ article a {
     min-width: 100%;
     min-height: 100%;
 
-    /* background-position: center;
-    object-fit: cover; */
-
     opacity: 100%;
     transition: opacity 300ms ease;
 }
-
 .article-container article img:hover {
     opacity: 10%;
 }
@@ -239,11 +241,11 @@ article a {
 .contact-tile {
     overflow: hidden;
 }
-
 .contact-tile img {
     max-width: 100%;
     object-fit: contain;
 }
+
 
 /* MEDIA QUERIES */
 

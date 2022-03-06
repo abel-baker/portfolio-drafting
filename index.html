@@ -16,9 +16,9 @@
 
 <body>
 
-    <header id="header" class="header">
+    <header id="header" class="header"> <!-- sticky header -->
         <h1><span class="no-break">Abel Baker</span>, <span class="no-break">a Silly Billy</span></h1>
-        <nav>
+        <nav> <!-- positioned relative to sticky header -->
             <ul>
                 <li class="nav-label">check out:</li>
                 <li><a href="#section-projects">projects</a></li>
@@ -28,7 +28,7 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <img src="./assets/images/abel-baker.jpg" alt="Aged sepia-toned photograph of a smiling man">
         <p>front-end developer, back-end apprentice</p>
     </section>
@@ -40,9 +40,10 @@
                 <h3>Projects</h3>
             </div>
 
-            <section class="article-container project-container"> <!-- flexbox: content div containing indiv articles --> 
+            <section class="article-container project-container"> <!-- flexbox: indiv articles --> 
 
-                <article id="project-html" class="flip-article"> <!-- vertical box w wide border, background img, bottom-right label, collapsed border -->
+                <!-- vertical box w wide border, img, hover background img, bottom-right label, collapsed border -->
+                <article id="project-html" class="flip-article"> <!-- box class that flips horizontal at narrow resolutions -->
                     <a href="https://abel-baker.github.io/run-buddy/" target="_blank"><img src="./assets/images/runbuddy.png" 
                         alt="Screenshot and source code of Run Buddy website implemented in html & css by abel baker" /></a>
                     <p>html / css</p>
@@ -78,7 +79,6 @@
                         alt="Screenshot of a resume with 'hipster ipsum' placeholder text" /></a>
                     <p>resume</p>
                 </article>
-
             </section>
         </section>  <!-- end resume -->
 
@@ -109,7 +109,7 @@
             <nav>
                 <ul>
                     <li class="nav-label">thanks for visiting</li>
-                    <li><a href="#header">back to top</a></li>
+                    <li><a href="#hero">back to top</a></li>
                 </ul>
             </nav>
         </footer>
