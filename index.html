@@ -9,23 +9,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Trirong&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/flatstyle.css">
 
     <title>Abel Baker &ndash; front-end portfolio</title>
 </head>
 
 <body>
-
-    <header id="header" class="header"> <!-- sticky header -->
-        <h1><span class="no-break">Abel Baker</span>, <span class="no-break">a Silly Billy</span></h1>
-        <nav> <!-- positioned relative to sticky header -->
-            <ul>
-                <li class="nav-label">check out:</li>
-                <li><a href="#section-projects">projects</a></li>
-                <li><a href="#section-resume">resume</a></li>
-                <li><a href="#section-contact">contact</a></li>
-            </ul>
+    <header id="header" class="sticky-top mb-2">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-sm">
+                <span class="navbar-brand mb-0 h1">Abel Baker</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-5">
+                        <a class="nav-link" href="#section-projects">Projects</a>
+                        <a class="nav-link" href="#section-resume">Resume</a>
+                        <a class="nav-link" href="#section-contact">Contact</a>
+                    </div>
+                </div>
+            </div>
         </nav>
+    </header>
+
+    <div class="container">
+        
+            <div class="row g-2 justify-content-start">
+                <div class="col-md-auto">
+                    <img class="img-fluid rounded img-" alt="Portrait of Abel Baker" src="./assets/images/abel-baker.jpg">
+                </div>
+                <div class="col-auto text-start">
+                        <h5 class="text-start">Abel Baker</h5>
+                        <p>Front-end developer, back-end apprentice</p>
+                </div>
+            </div>
+            
+    </div>
+
+    <header>
+        <div class="example">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="media-list">
+                        <li class="media">
+                            <a class="pull-left media-left media-middle" href="#"><img class="media-object img-rounded portrait" src="./assets/images/abel-baker.jpg"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Abel Baker says</h4>
+                                <p>Today</p>
+                                <p>A silly billy.  front-end developer, back-end apprentice</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section id="hero" class="hero">
@@ -116,6 +156,7 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 
