@@ -18,19 +18,28 @@
 .project-text {
     filter: none;
 }
-#crochet-card {
+#weatherbyday-card div.blur-image {
+    background-image: url('../images/weatherbyday.PNG');
+}
+#crochet-card div.blur-image {
     background-image: url('../images/crochet.webp');
 }
-#loveletter-card {
-    /* background-image: url('../images/js.webp');
-    background-position: 0 0; */
-}
-#js-card {
+#loveletter-card div.blur-image {
     background-image: url('../images/js.webp');
+    background-position: 0 0;
+}
+#runbuddy-card div.blur-image {
+    background-image: url('../images/runbuddy.png');
+    filter: brightness(80%) blur(3px);
+}
+#resume-card div.blur-image {
+    background-image: url('../images/resume.png');
+    background-position: 50% 0;
+    filter: brightness(1.5) blur(3px);
 }
 
-.blur-parent {
-    position: relative;
+#resume-card {
+
 }
 
 .blur-image {
@@ -40,14 +49,12 @@
 
     filter: blur(3px);
     
-    background-image: url('../images/js.webp');
+    /* background-image: url('../images/js.webp'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     z-index: -1;
-
-    background-position: 0 0;
 }
 
 .blur-card {

@@ -21,7 +21,7 @@
     <header id="header" class="sticky-top mb-2">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-sm">
-                <span class="navbar-brand mb-0 h1">Abel Baker</span>
+                <span class="navbar-brand mb-0 h1 text-nowrap">Abel Baker</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,10 +39,10 @@
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="./assets/images/abel-baker.jpg" class="d-block mx-lg-auto img-fluid" height="237" loading="lazy">
+                <img src="./assets/images/abel-baker.jpg" class="d-block mx-lg-auto img-fluid shadow-lg" height="237" loading="lazy" style="border-radius: 3px">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Abel Baker, silly billy</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3" style="text-shadow: 1rem 1rem 3rem rgba(0,0,0,.25) !important;"><span class="text-nowrap">Abel Baker,</span> <span class="text-nowrap">silly billy</span></h1>
                 <p class="lead"></p>front-end developer, back-end apprentice
             </div>
         </div>
@@ -53,11 +53,37 @@
         <section class="container px-4 py-5" id="project-cards">
             <h2 class="pb-2 border-bottom">Projects</h2>
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="row row-cols-1 align-items-stretch g-4 py-5">
 
-                <div class="col">
-                    <div id="crochet-card" class="card project-card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="">
+                <div class="col-lg-8">
+                    <div id="weatherbyday-card" class="card project-card card-cover h-100 overflow-hidden text-dark bg-dark rounded-5 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-2">
+
+                            <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold">Weather by Day</h2>
+                            <p class="mb-4"><small>cosmological calendar</small></p>
+                            <div class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <a href="#"><i class="bi-github"></i></a>
+                                </li>
+                                <li class="d-flex align-items-center ms-auto me-3">
+                                    <i class="bi bi-link-45deg me-1"></i>
+                                    <small>live</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-code-square me-1"></i>
+                                    <small>javascript</small>
+                                </li>
+                            </div>
+
+                        </div>
+                        <div class="blur-image"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div id="crochet-card" class="card project-card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
                             <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold">Crochet</h2>
                             <p class="mb-4"><small>Tunisian crochet</small></p>
                             <div class="d-flex list-unstyled mt-auto">
@@ -65,140 +91,125 @@
                                     <i class="bi-github"></i>
                                 </li> -->
                                 <li class="d-flex align-items-center ms-auto me-3">
-                                    <i class="bi bi-link-45deg me-1"></i>
-                                    <small>Ravelry</small>
+                                    <i class="bi bi-geo-alt me-1"></i>
+                                    <small>irl</small>
                                 </li>
                                 <li class="d-flex align-items-center">
                                     <i class="bi bi-code-square me-1"></i>
-                                    <small>irl</small>
+                                    <small>yarn</small>
                                 </li>
                             </div>
+
                         </div>
+                        <div class="blur-image"></div>
                     </div>
                 </div>
 
-                <!-- <div class="col">
-                    <div id="loveletter-card" class="card project-card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-                        <div class="d-flex project-text flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold">Crochet</h2>
-                            <p class="mb-4 text-dark"><small>Tunisian crochet</small></p>
-                            <div class="d-flex list-unstyled mt-auto text-dark">
+                <div class="col-lg-6">
+                    <div id="loveletter-card" class="card project-card card-cover h-100 overflow-hidden text-light bg-dark rounded-5 shadow-lg">
+                        <div class="d-flex project-text flex-column h-100 p-5 pb-3 text-light text-shadow-1">
+
+                            <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold text-nowrap">Love letters</h2>
+                            <p class="mb-4"><small>discord bot</small></p>
+                            <div class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <i class="bi-github"></i>
+                                    <a href="#"><i class="bi-github"></i></a>
+                                </li>
+                                <!-- <li class="d-flex align-items-center ms-auto me-3">
+                                    <i class="bi bi-link-45deg me-1"></i>
+                                    <small>repo</small>
+                                </li> -->
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-code-square me-1"></i>
+                                    <small>javascript/Node.js</small>
+                                </li>
+                            </div>
+
+                        </div>
+                        <div class="blur-image"></div>
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div id="runbuddy-card" class="card project-card card-cover h-100 overflow-hidden text-light bg-dark rounded-5 shadow-lg">
+                        <div class="d-flex project-text flex-column h-100 p-5 pb-3 text-light text-shadow-1">
+
+                            <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold text-nowrap">Run buddy</h2>
+                            <p class="mb-4"><small>responsive showcase</small></p>
+                            <div class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <a href="#"><i class="bi-github"></i></a>
                                 </li>
                                 <li class="d-flex align-items-center ms-auto me-3">
                                     <i class="bi bi-link-45deg me-1"></i>
-                                    <small>Ravelry</small>
+                                    <small>live</small>
                                 </li>
                                 <li class="d-flex align-items-center">
                                     <i class="bi bi-code-square me-1"></i>
-                                    <small>irl</small>
+                                    <small>html/css</small>
                                 </li>
                             </div>
-                        </div>
-                    </div>
-                </div> -->
 
-                <!-- <div class="col blur-parent">
-                    <div id="js-card" class="blur-image"></div>
-                    <div id="blur-text" class="blur-card w-100 p-5 text-shadow-1 text-light">
-                        <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold">Love letters</h2>
-                        <p class="mb-4"><small>Discord bot</small></p>
-                        <div class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto">
-                                <i class="bi-github"></i>
-                            </li>
-                            <li class="d-flex align-items-center ms-auto me-3">
-                                <i class="bi bi-link-45deg me-1"></i>
-                                <small>Ravelry</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="bi bi-code-square me-1"></i>
-                                <small>javascript</small>
-                            </li>
                         </div>
-                    </div> -->
+                        <div class="blur-image"></div>
 
-                <!-- <div class="col blur-parent">
-                    <div id="loveletter-card" class="blur-image"></div>
-                    <div id="blur-text" class="blur-card w-100 p-5 text-shadow-1 text-light">
-                        <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold">Javascript</h2>
-                        <p class="mb-4"><small>javascript</small></p>
-                        <div class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto">
-                                <i class="bi-github"></i>
-                            </li>
-                            <li class="d-flex align-items-center ms-auto me-3">
-                                <i class="bi bi-link-45deg me-1"></i>
-                                <small>Ravelry</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="bi bi-code-square me-1"></i>
-                                <small>irl</small>
-                            </li>
-                        </div>
-                    </div> -->
-                    <div class="col">
-                        <div id="loveletter-card" class="card project-card card-cover h-100 overflow-hidden text-light rounded-5 shadow-lg">
-                            <div class="d-flex project-text flex-column h-100 p-5 pb-3 text-light text-shadow-1">
-                                <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold text-nowrap">Love letters</h2>
-                                <p class="mb-4"><small>discord bot</small></p>
-                                <div class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <i class="bi-github"></i>
-                                    </li>
-                                    <li class="d-flex align-items-center ms-auto me-3">
-                                        <i class="bi bi-link-45deg me-1"></i>
-                                        <small>Ravelry</small>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <i class="bi bi-code-square me-1"></i>
-                                        <small>irl</small>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="blur-image"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div id="loveletter-card" class="card project-card card-cover h-100 overflow-hidden text-light rounded-5 shadow-lg">
-                            <div class="d-flex project-text flex-column h-100 p-5 pb-3 text-light text-shadow-1">
-                                <h2 class="pt-5 mt-5 mb-1 display-6 lh-1 fw-bold text-nowrap">Love letters</h2>
-                                <p class="mb-4"><small>discord bot</small></p>
-                                <div class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <i class="bi-github"></i>
-                                    </li>
-                                    <li class="d-flex align-items-center ms-auto me-3">
-                                        <i class="bi bi-link-45deg me-1"></i>
-                                        <small>Ravelry</small>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <i class="bi bi-code-square me-1"></i>
-                                        <small>irl</small>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="blur-image"></div>
-                        </div>
                     </div>
                 </div>
 
+            </div>
 
             </div>
         </section>
 
-        <section id="section-projects"> <!-- flexbox: title bar and content div -->
-            <div class="title-bar">
-                <h3>Projects</h3>
+        <section class="container px-4 py-5" id="project-cards">
+            <h2 class="pb-2 border-bottom">Resume</h2>
+
+            <div class="row  align-items-stretch g-4 py-5">
+
+                <div class="col">
+                    <div id="resume-card" class="card project-card card-cover h-100 overflow-hidden text-dark bg-dark rounded-5 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 py-3 text-dark text-shadow-1">
+
+                            <h2 class="pt-5 my-1 display-6 lh-1 fw-bold">Resume</h2>
+                            <p class="mb-4"><small>Tunisian crochet</small></p>
+                            <div class="d-flex list-unstyled mt-auto">
+                                <!-- <li class="me-auto">
+                                    <i class="bi-github"></i>
+                                </li> -->
+                                <li class="d-flex align-items-center ms-auto me-3">
+                                    <i class="bi bi-geo-alt me-1"></i>
+                                    <small>irl</small>
+                                </li>
+                                <!-- <li class="d-flex align-items-center">
+                                    <i class="bi bi-code-square me-1"></i>
+                                    <small>yarn</small>
+                                </li> -->
+                            </div>
+
+                        </div>
+                        <div class="blur-image"></div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
 
-            <section class="article-container project-container"> <!-- flexbox: indiv articles --> 
+        </section>
+
+        <!-- <section id="section-projects"> flexbox: title bar and content div -->
+            <!-- <div class="title-bar">
+                <h3>Projects</h3>
+            </div> -->
+
+            <!-- <section class="article-container project-container"> flexbox: indiv articles  -->
 
                 <!-- vertical box w wide border, img, hover background img, bottom-right label, collapsed border -->
-                <article id="project-html" class="flip-article"> <!-- box class that flips horizontal at narrow resolutions -->
-                    <a href="https://abel-baker.github.io/run-buddy/" target="_blank"><img src="./assets/images/runbuddy.png" 
+                <!-- <article id="project-html" class="flip-article"> box class that flips horizontal at narrow resolutions -->
+                    <!-- <a href="https://abel-baker.github.io/run-buddy/" target="_blank"><img src="./assets/images/runbuddy.png" 
                         alt="Screenshot and source code of Run Buddy website implemented in html & css by abel baker" /></a>
                     <p>html / css</p>
                 </article>
@@ -217,10 +228,10 @@
                     <p>
                         irl
                     </p>
-                </article>
+                </article> -->
 
-            </section> <!-- end project-container-->
-        </section> <!-- end projects -->
+            <!-- </section> end project-container -->
+        </section> end projects
 
         <section id="section-resume"> <!-- flexbox? single article -->
             <div class="title-bar">
