@@ -13,7 +13,3 @@ Practice creating a personal portfolio using responsive html/css design for a va
 
 * GitHub pages: https://abel-baker.github.io/portfolio-drafting
 * GitHub repo: https://github.com/abel-baker/portfolio-drafting
-
-## Screenshot
-
-<img width="694" alt="readme-screenshot" src="https://user-images.githubusercontent.com/2822827/156905534-8c1d749a-acc7-43ce-bb9a-c06dcbcf35b5.png">
