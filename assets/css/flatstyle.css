@@ -18,6 +18,10 @@
 .project-text {
     filter: none;
 }
+#uplift-card div.blur-image {
+    background-image: url('../images/uplift.png');
+    filter: brightness(1.2) blur(2px);
+}
 #weatherbyday-card div.blur-image {
     background-image: url('../images/weatherbyday.PNG');
 }
